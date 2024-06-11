@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --base-deep-blue: rgb(8, 14, 22);
+    --light-deep-blue: rgb(14, 24, 37);
+    --highlight-deep-blue: rgb(27, 47, 71);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: var(--base-deep-blue);
+}
+
+.top-bar-container{
+    width: 100vw;
+    height: 8vh;
+    background-color: var(--light-deep-blue);
+    opacity: .75;
+    display: flex;
+}
+
+.top-bar-section{
+    flex: .5;
+    border: dotted;
+    color: blue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar-nav-button{
+    cursor: pointer;
+    border: dotted;
+    color: blue;
+    margin: 0px 10px;
+    border-radius: 15%;
+    transition: background-color 0.1s;
+    background-color: var(--light-deep-blue);
+}
+
+.top-bar-nav-button.active{
+    background-color: var(--highlight-deep-blue);
+    transition: background-color 0.1s;
+}
+
+.top-bar-nav-icon{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 4vh;
+    width: 4vh;
+    margin: 2px 7px;
+}
