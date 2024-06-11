@@ -26,12 +26,14 @@ body{
     background-color: var(--light-deep-blue);
     opacity: .75;
     display: flex;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    z-index: 1;
+    position: relative;
 }
 
 .top-bar-section{
     flex: .5;
-    border: dotted;
-    color: blue;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -40,8 +42,6 @@ body{
 
 .top-bar-nav-button{
     cursor: pointer;
-    border: dotted;
-    color: blue;
     margin: 0px 10px;
     border-radius: 15%;
     transition: background-color 0.1s;
@@ -79,4 +79,38 @@ body{
     height: 4vh;
     width: 4vh;
     margin: 2px 7px;
+}
+
+a{
+    margin: 0px 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-body{
+    border: dotted;
+    color: blue;
+    height: 100vh;
+    padding: 0px 10vw;
+    display: flex;
+}
+
+.main-body-content{
+    border: dotted;
+    color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.profile-picture{
+    width: 10vw;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 1 / 1;
+    position: absolute;
 }
