@@ -93,6 +93,8 @@ a{
     height: 100vh;
     padding: 0px 10vw;
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .main-body-content{
@@ -103,6 +105,8 @@ a{
     justify-content: center;
     align-items: center;
     height: 25vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .profile-picture{
@@ -113,4 +117,19 @@ a{
     background-repeat: no-repeat;
     aspect-ratio: 1 / 1;
     position: absolute;
+}
+
+.large-text{
+    color: white;
+    font-size: 30px;
+}
+
+.normal-text{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul li::marker{
+    color: white;
 }
